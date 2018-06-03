@@ -1,0 +1,311 @@
+a:link {
+  text-decoration: none;
+  color:inherit;
+}
+
+body{
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+h1{
+  font-size: 32px;
+  font-weight: 900;
+}
+
+h2{
+  font-size: 24px;
+}
+
+/* header */
+
+nav li{
+  display: inline;
+  padding-left: 16px;
+}
+
+nav{
+  margin-right: 24px;
+}
+
+header{
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  height: 64px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.maincontent{
+  top: 64px;
+  position: relative;
+}
+
+.nav_icons{
+  display: none;
+}
+
+@media only screen and (max-width:620px){
+  .nav_words,
+  .logo{
+    display: none;
+  }
+
+  .nav_icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav{
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+/* banner */
+
+.banner{
+  background-color: lightgrey;
+  display: flex;
+  align-items: center;
+  color: grey;
+  width: 100%;
+}
+
+.banner img{
+  max-width: 60%;
+  margin: 32px 24px 32px 24px;
+}
+
+.bannertext{
+  padding-right: 24px;
+}
+
+.bannertext h1{
+  margin-bottom: 24px;
+}
+
+.btn{
+  color: white;
+  margin-top: 24px;
+  width: 240px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media only screen and (max-width:760px){
+  .banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .banner img{
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .bannertext{
+    padding: 2rem 1rem 2rem 1rem;
+  }
+
+  .bannertext h1{
+    margin-bottom: 1rem;
+  }
+
+  .btn{
+    width: 100%;
+  }
+}
+
+/* section1 */
+
+.container1{
+  width: auto;
+  display: flex;
+}
+
+.bigone{
+  max-width: 60%;
+  margin: 32px 24px;
+  overflow: hidden;
+}
+
+.bigone img{
+  width: 100%;
+}
+
+.bigone h1{
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.bigone #note{
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.small{
+  display: flex;
+  align-items: center;
+  /*border-bottom: 1px solid lightgrey;*/
+  padding: 20px 20px 20px 0 ;
+}
+
+.smallones{
+  width: 40%;
+  padding-top: 0px;
+  /*border-left: 1px solid lightgrey;*/
+}
+
+.small img{
+  width: 35%;
+}
+
+.small .texts{
+  width: 65%;
+  padding-left: 20px;
+}
+
+.texts p{
+  padding-top: 0.5rem;
+}
+
+/*.small:hover{
+  background-color: lightgrey;
+  border: none;
+}*/
+
+.one{
+  padding-top: 2rem;
+}
+
+@media only screen and (max-width:760px){
+  .container1{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bigone{
+    max-width: 100%;
+    margin: 1.5rem 1rem;
+    overflow: hidden;
+  }
+
+  .smallones{
+    width: 100%;
+    margin: 1.5rem 1rem;
+  }
+
+  .one{
+    padding-top: 0;
+  }
+
+  .bigone #note{
+    margin-bottom: 0px;
+  }
+}
+
+/* section2 */
+
+.container2{
+  background-color: lightgrey;
+  width: 100%;
+  height: auto;
+}
+
+.container2 h1{
+  text-align: center;
+  padding: 32px;
+}
+
+.card{
+  background-color: white;
+}
+
+.cards{
+  max-width: 960px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  margin: auto;
+  padding-bottom: 3rem;
+}
+
+.cards img{
+  width: 100%;
+}
+
+.card h2{
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card p{
+  margin-left: 1rem;
+}
+
+.card_course{
+  margin-top: .5rem;
+  margin-bottom: 2rem;
+}
+
+/* section3 */
+
+.container4{
+  width: auto;
+  display: flex;
+}
+
+.container3 .h1{
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.bigone video{
+  width: 100%;
+}
+
+@media only screen and (max-width:760px){
+  .container4{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* --footer-- */
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem 1.3rem 1.5rem;
+  border-top: 1px solid lightgrey;
+}
+
+@media only screen and (max-width:760px){
+  footer{
+    width: 100%;
+    display: block;
+  }
+
+  footer nav{
+    margin: 0;
+    padding-top: .3rem;
+  }
+}
